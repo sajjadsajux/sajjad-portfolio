@@ -5,11 +5,11 @@ import Navbar from "../components/shared/Navbar/Navbar";
 
 const MainLayOut = () => {
   return (
-    <div>
+    <div className="bg-base-300 scroll-smooth">
       <nav>
         <Navbar></Navbar>
       </nav>
-      <main>
+      <main className="container mx-auto">
         <Outlet></Outlet>
       </main>
       <footer>
