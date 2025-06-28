@@ -5,7 +5,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 
 const MainLayOut = () => {
   return (
-    <div className="bg-base-300 scroll-smooth">
+    <div className="bg-base-200 ">
       <nav>
         <Navbar></Navbar>
       </nav>

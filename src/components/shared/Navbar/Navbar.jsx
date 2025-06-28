@@ -1,4 +1,5 @@
 import React from "react";
+import ThemeToggle from "../../Theme/ThemeToggle";
 
 const Navbar = () => {
   const navLinks = (
@@ -64,10 +65,11 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
-      <div className="navbar-end">
-        <a href="#contact" className="hover:text-primary btn btn-secondary text-black">
+      <div className="navbar-end gap-2">
+        <a href="#contact" className=" btn btn-secondary text-black dark:text-white ">
           Contact
         </a>
+        <ThemeToggle></ThemeToggle>
       </div>
     </div>
   );
