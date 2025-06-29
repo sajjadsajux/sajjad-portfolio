@@ -47,7 +47,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-primary shadow-sm">
+    <div className="navbar  shadow-sm text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -66,10 +66,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-2">
-        <a href="#contact" className=" btn btn-secondary text-black dark:text-white ">
+        <a href="#contact" className=" btn btn-primary text-black dark:text-white ">
           Contact
         </a>
-        <ThemeToggle></ThemeToggle>
+        {/* <ThemeToggle></ThemeToggle> */}
       </div>
     </div>
   );

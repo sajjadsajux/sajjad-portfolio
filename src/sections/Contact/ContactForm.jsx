@@ -41,7 +41,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto">
+    <div className="w-full ">
       <form ref={form} onSubmit={sendEmail} className="space-y-6">
         <div>
           <label htmlFor="name" className="block mb-1 font-medium">

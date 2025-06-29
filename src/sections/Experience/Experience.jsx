@@ -1,42 +1,117 @@
-import React from "react";
-const experiences = [
+import React, { useEffect } from "react";
+import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+import Particles from "../../components/animations/Particles/Particles";
+
+const experience = [
   {
     company: "UrBackoffices",
     position: "Virtual Assistant & Team Lead",
     duration: "Mar 2018 – Nov 2024",
-    description: ["Led a team of virtual assistants for client support and data entry.", "Handled project coordination and web research tasks.", "Maintained communication between clients and internal teams."],
+    summary: "I had the privilege of working at UrBackoffices for almost seven years, where I grew, learned, and worked with an amazing team. As a Virtual Assistant and Team Lead, I consistently gave my best effort to handle every task and responsibility that came my way.",
+    responsibilities: [
+      {
+        title: "Team Lead 👥",
+        description: "Led the team of Virtual Assistants, offering support and guidance to ensure projects were completed successfully. Managed tasks, tracked progress, and helped solve challenges.",
+      },
+      {
+        title: "Data Entry & VA Tasks 📝",
+        description: "Performed data entry and virtual assistant tasks accurately and efficiently for international clients, using various global databases and software.",
+      },
+      {
+        title: "Team Collaboration 🤝",
+        description: "Worked with team members on most of the projects requested by clients and the office, ensuring everything was completed on time and to a high standard.",
+      },
+      {
+        title: "Office Management 🏢",
+        description: "Managed daily office tasks and communication, stepping in to handle office manager duties whenever needed, ensuring everything ran smoothly.",
+      },
+      {
+        title: "Training & Mentorship 📚",
+        description: "Helped train new team members on data entry tasks and office processes, creating a supportive and collaborative environment.",
+      },
+      {
+        title: "Process Improvement 🔧",
+        description: "Worked with management to suggest ways to improve office processes, making everything run more efficiently.",
+      },
+    ],
+    closing: "UrBackoffices was more than just a job, it was a place where I grew, learned, and made great memories. I’m truly thankful for all the opportunities and experiences I gained along the way.",
   },
   {
-    company: "Freelance",
+    company: "TechSolutions Inc.",
     position: "Frontend Developer",
-    duration: "2024 – Present",
-    description: ["Built responsive web apps with React, Tailwind, Firebase.", "Collaborated with clients to deliver portfolio and dashboard projects.", "Continuously learning and improving frontend development skills."],
+    duration: "Dec 2024 – Present",
+    summary: "Currently working as a Frontend Developer at TechSolutions Inc., focusing on building modern, responsive web applications and improving user experiences.",
+    responsibilities: [
+      {
+        title: "UI Development 🎨",
+        description: "Design and implement user-friendly interfaces using React and Tailwind CSS to create seamless user experiences.",
+      },
+      {
+        title: "Collaborative Projects 🤝",
+        description: "Work closely with backend developers and designers to integrate APIs and ensure consistent application behavior.",
+      },
+      {
+        title: "Performance Optimization ⚡",
+        description: "Analyze and optimize application performance for faster load times and smoother interactions.",
+      },
+      {
+        title: "Code Reviews & Mentorship 🧑‍🏫",
+        description: "Participate in code reviews and mentor junior developers to improve code quality and development standards.",
+      },
+    ],
+    closing: "Working at TechSolutions Inc. has enhanced my frontend development skills and given me the opportunity to contribute to impactful projects in a fast-paced environment.",
   },
 ];
 
-const Experience = () => {
+const ExperienceCard = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+      mirror: true,
+    });
+  }, []);
   return (
-    <div className="container mx-auto px-4 bg-base-100">
+    <div className="container mx-auto px-6 py-10 max-w-3xl bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-lg">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-10 text-center">Experience</h2>
 
-      <div className="space-y-8">
-        {experiences.map((exp, index) => (
-          <div key={index} className="bg-base-200 p-6 rounded-lg shadow hover:shadow-lg transition">
-            <div className="flex flex-col md:flex-row md:justify-between mb-2">
-              <h3 className="text-xl font-semibold">{exp.position}</h3>
-              <span className="text-sm text-base-content/70">{exp.duration}</span>
+      <div className="relative">
+        {experience.map((exp, idx) => (
+          <React.Fragment key={idx}>
+            {/* Card */}
+            <div className="flex flex-col glass bg-opacity-60 rounded-lg border border-cyan-700 p-6 shadow-md hover:shadow-lg transition duration-300" data-aos="zoom-in-down" data-aos-duration="5000" data-aos-mirror="true" data-aos-once="false">
+              <div className="flex justify-between items-center mb-1 relative">
+                <h3 className="text-xl font-semibold text-secondary">{exp.position}</h3>
+                <span className="text-sm text-accent">{exp.duration}</span>
+              </div>
+              <h4 className="text-accent font-medium mb-2">{exp.company}</h4>
+              <p className="text-gray-200 mb-4 leading-relaxed text-sm md:text-base">{exp.summary}</p>
+              <ul className="list-disc list-inside space-y-1 text-base-100 text-sm md:text-base max-h-36 overflow-y-auto pr-2">
+                {exp.responsibilities.map(({ title, description }, i) => (
+                  <li key={i}>
+                    <strong className="text-cyan-300">{title}:</strong> {description}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 italic text-gray-400 text-sm">{exp.closing}</p>
             </div>
-            <h4 className="text-primary font-medium mb-2">{exp.company}</h4>
-            <ul className="list-disc list-inside space-y-1 text-base-content">
-              {exp.description.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
+
+            {/* Arrow except last */}
+            {idx < experience.length - 1 && (
+              <div className="flex justify-center mt-4 mb-6">
+                <FaArrowUp className="text-cyan-300 animate-bounce" size={24} />
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
+      {/* <div style={{ width: "100%", height: "100%", position: "absolute" }}>
+        <Particles particleColors={["#ffffff", "#ffffff"]} particleCount={200} particleSpread={10} speed={0.1} particleBaseSize={100} moveParticlesOnHover={true} alphaParticles={false} disableRotation={false} />
+      </div> */}
     </div>
   );
 };
 
-export default Experience;
+export default ExperienceCard;

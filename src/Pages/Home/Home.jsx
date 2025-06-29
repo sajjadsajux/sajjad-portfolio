@@ -9,7 +9,7 @@ import Education from "../../sections/Education/Education";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <section id="hero" className="py-10 ">
         <Hero />
       </section>
