@@ -1,12 +1,16 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp, FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <div className="container mx-auto px-4 bg-base-100">
-      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">Contact Me</h2>
+    <div className="container mx-auto px-10 bg-base-100 py-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Contact Me</h2>
+      <p className="text-base md:text-lg text-base-content text-center max-w-2xl mx-auto mb-12">
+        I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi — feel free to reach out. You can connect with me through the form or directly via email or social platforms.
+      </p>
 
-      <div className="flex flex-col md:flex-row gap-12">
+      <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
         {/* Left: Contact Info */}
         <div className="md:w-1/2 space-y-6">
           <div>
@@ -14,19 +18,25 @@ const Contact = () => {
             <ul className="space-y-3 text-base-content text-lg">
               <li className="flex items-center gap-3">
                 <FaPhone className="text-primary" />
-                <span>+880 1234 567890</span>
+                <a href="tel:+8801629202095" className="hover:text-primary-focus">
+                  +880 1629 202095
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <FaWhatsapp className="text-primary" />
-                <span>+880 1987 654321</span>
+                <a href="https://wa.me/8801629202095" target="_blank" rel="noreferrer" className="hover:text-primary-focus">
+                  +880 1629 202095
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-primary" />
-                <span>Dhaka, Bangladesh</span>
+                <span>Sreemangal, Bangladesh</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-primary" />
-                <span>your.email@example.com</span>
+                <a href="mailto:sajjadhossainsajux@gmail.com" className="hover:text-primary-focus">
+                  sajjadhossainsajux@gmail.com
+                </a>
               </li>
             </ul>
           </div>
@@ -50,32 +60,7 @@ const Contact = () => {
 
         {/* Right: Contact Form */}
         <div className="md:w-1/2">
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-            <div>
-              <label htmlFor="name" className="block mb-1 font-medium">
-                Name
-              </label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required className="input input-bordered w-full" />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block mb-1 font-medium">
-                Email
-              </label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required className="input input-bordered w-full" />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block mb-1 font-medium">
-                Message
-              </label>
-              <textarea id="message" name="message" placeholder="Your message..." required rows={5} className="textarea textarea-bordered w-full resize-none" />
-            </div>
-
-            <button type="submit" className="btn btn-primary w-full">
-              Send Message
-            </button>
-          </form>
+          <ContactForm></ContactForm>
         </div>
       </div>
     </div>

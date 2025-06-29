@@ -10,25 +10,25 @@ import Education from "../../sections/Education/Education";
 const Home = () => {
   return (
     <div>
-      <section id="hero" className="py-20 bg">
+      <section id="hero" className="py-10 ">
         <Hero />
       </section>
-      <section id="about" className="py-20 bg">
+      <section id="about" className="py-10 ">
         <About />
       </section>
-      <section id="skills" className="py-20 bg">
+      <section id="skills" className="py-10 ">
         <Skills />
       </section>
-      <section id="experience" className="py-20 bg">
+      <section id="experience" className="py-10 ">
         <Experience />
       </section>
-      <section id="education" className="py-20 bg">
+      <section id="education" className="py-10 ">
         <Education />
       </section>
-      {/* <section id="projects" className="py-20 bg">
+      {/* <section id="projects" className="py-10 bg">
         <Projects />
       </section> */}
-      <section id="contact" className="py-20 bg">
+      <section id="contact" className="py-10 ">
         <Contact />
       </section>
     </div>

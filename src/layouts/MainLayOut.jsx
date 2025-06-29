@@ -6,7 +6,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 const MainLayOut = () => {
   return (
     <div className="bg-base-200 ">
-      <nav>
+      <nav className="sticky top-0 z-50 glass">
         <Navbar></Navbar>
       </nav>
       <main className="container mx-auto">

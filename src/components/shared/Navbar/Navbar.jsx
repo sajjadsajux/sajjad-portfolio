@@ -10,7 +10,7 @@ const Navbar = () => {
         </a>
       </li>
       <li>
-        <a href="#about" className="hover:text-primary">
+        <a href="#hero" className="hover:text-primary">
           Hero
         </a>
       </li>
