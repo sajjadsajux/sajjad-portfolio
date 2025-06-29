@@ -74,15 +74,15 @@ const ExperienceCard = () => {
     });
   }, []);
   return (
-    <div className="container mx-auto px-6 py-10 max-w-3xl bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-lg">
+    <div className="md:max-w-6xl mx-auto  px-6 py-10 max-w-3xl bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-lg">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-10 text-center">Experience</h2>
 
-      <div className="relative">
+      <div className="relative  ">
         {experience.map((exp, idx) => (
           <React.Fragment key={idx}>
             {/* Card */}
-            <div className="flex flex-col glass bg-opacity-60 rounded-lg border border-cyan-700 p-6 shadow-md hover:shadow-lg transition duration-300" data-aos="zoom-in-down" data-aos-duration="5000" data-aos-mirror="true" data-aos-once="false">
-              <div className="flex justify-between items-center mb-1 relative">
+            <div className="flex flex-col glass bg-opacity-60 rounded-lg border border-cyan-700 p-6 shadow-md hover:shadow-lg transition duration-300 " data-aos="zoom-in-down" data-aos-duration="5000" data-aos-mirror="true" data-aos-once="false">
+              <div className="flex justify-between items-center mb-1 ">
                 <h3 className="text-xl font-semibold text-secondary">{exp.position}</h3>
                 <span className="text-sm text-accent">{exp.duration}</span>
               </div>

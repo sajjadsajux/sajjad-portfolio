@@ -6,7 +6,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 const MainLayOut = () => {
   return (
     <div
-      className="bg-gradient-to-r from-[#000046] via-[#096781] to-[#000046]
+      className="bg-gradient-to-r from-[#000046] via-[#043644] to-[#000046]
 
 
 

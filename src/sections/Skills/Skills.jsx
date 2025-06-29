@@ -15,17 +15,17 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-12  space-y-16">
+    <div className="container mx-auto px-4   space-y-16">
       <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Skills & Technologies</h2>
 
       {/* Frontend Section */}
       <section data-aos="fade-up">
-        <h3 className="text-2xl font-semibold text-secondary mb-2 text-center">Frontend</h3>
+        <h3 className="text-2xl font-semibold text-base-200 mb-2 text-center">Frontend</h3>
         {/* <p className="text-center max-w-3xl mx-auto mb-6 text-base-100">{frontendSkillsIntro}</p> */}
 
-        <Marquee pauseOnHover gradient={false} speed={50}>
+        <Marquee pauseOnHover gradient={false} speed={50} className="md:max-w-6xl mx-auto">
           {frontendSkills.map(({ name, logo, type }, idx) => (
-            <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-indigo-500 via-purple-600 to-pink-500 text-white rounded-2xl shadow-md p-4 mx-4 flex-shrink-0" style={{ userSelect: "none", width: "160px", height: "180px" }}>
+            <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-purple-900 via-indigo-900 to-blue-900 text-white rounded-2xl shadow-md p-4 mx-4 flex-shrink-0" style={{ userSelect: "none", width: "160px", height: "180px" }}>
               <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
               <span className="font-semibold text-lg text-center">{name}</span>
               <small className="text-sm opacity-80 text-center">{type}</small>
@@ -36,10 +36,10 @@ const Skills = () => {
 
       {/* Backend Section */}
       <section data-aos="fade-right">
-        <h3 className="text-2xl font-semibold text-secondary mb-2 text-center">Backend</h3>
+        <h3 className="text-2xl font-semibold text-base-200 mb-2 text-center">Backend</h3>
         {/* <p className="text-center max-w-3xl mx-auto mb-6 text-base-100">{backendSkillsIntro}</p> */}
 
-        <Marquee pauseOnHover gradient={false} speed={50} direction="right">
+        <Marquee pauseOnHover gradient={false} speed={50} direction="right" className="md:max-w-6xl mx-auto">
           {backendSkills.map(({ name, logo, type }, idx) => (
             <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-green-600 via-teal-700 to-cyan-700 text-white rounded-xl shadow-lg p-4 mx-4 flex-shrink-0 cursor-default select-none" style={{ userSelect: "none", width: "160px", height: "180px" }}>
               <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
@@ -51,9 +51,9 @@ const Skills = () => {
       </section>
 
       {/* Tools Section */}
-      <section data-aos="zoom-in">
-        <h3 className="text-2xl font-semibold text-secondary mb-6 text-center">Tools & Packages</h3>
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+      <section data-aos="zoom-in" className="md:p-0">
+        <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Tools & Packages</h3>
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-10  md:max-w-6xl mx-auto justify-items-center items-center space-y-5 md:space-y-0">
           {tools.map(({ name, logo, type }, idx) => (
             <div
               key={idx}

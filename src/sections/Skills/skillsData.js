@@ -18,7 +18,7 @@ export const backendSkills = [
   { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", type: "Database" },
   { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", type: "Backend-as-a-Service" },
   { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg", type: "Authentication" },
-  { name: "REST API", logo: "https://restfulapi.net/wp-content/uploads/rest-api-logo.png", type: "API Design" },
+  { name: "REST API", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszCXd5b0Fpuxou1hMOiLTtygtpelEtIrBBw&s", type: "API Design" },
 ];
 
 export const tools = [
