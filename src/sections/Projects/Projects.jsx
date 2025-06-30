@@ -80,9 +80,6 @@ const Projects = () => {
                 <a href={project.clientRepo} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline text-base text-base-100">
                   Client Repo <FaGithub size={20} className="ml-1" />
                 </a>
-                <a href={project.serverRepo} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline text-base text-base-100">
-                  Server Repo <FaGithub size={20} className="ml-1" />
-                </a>
               </div>
 
               {/* View Details Button - Centered */}

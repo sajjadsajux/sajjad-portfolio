@@ -5,7 +5,7 @@ export const backendSkillsIntro = "Backend development handles server-side logic
 export const frontendSkills = [
   { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", type: "Markup" },
   { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", type: "Styling" },
-  { name: "Tailwind CSS", logo: "https://tailwindcss.com/_next/static/media/tailwindcss-mark.8b92bdf7.svg", type: "Utility-First CSS" },
+  { name: "Tailwind CSS", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s", type: "Utility-First CSS" },
   { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", type: "Programming Language" },
   { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", type: "Library" },
   { name: "React Router", logo: "https://reactrouter.com/favicon.ico", type: "Routing" },
@@ -25,11 +25,12 @@ export const tools = [
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", type: "Version Control" },
   { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", type: "Repository" },
   { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", type: "Code Editor" },
-  { name: "Postman", logo: "https://www.postman.com/assets/logos/postman-logo-stacked.svg", type: "API Testing" },
   { name: "Figma", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", type: "Design" },
   { name: "Netlify", logo: "https://www.netlify.com/v3/img/components/logomark.png", type: "Hosting" },
   { name: "Vercel", logo: "https://vercel.com/favicon.ico", type: "Hosting" },
   { name: "Vite", logo: "https://vitejs.dev/logo.svg", type: "Build Tool" },
+  { name: "npm", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg", type: "Package Manager" },
+  { name: "DaisyUI", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSCogrbQSb1aZmLoqetgm5xLHHZ_pNtUqOg&s", type: "UI Components" },
   { name: "Mamba UI", logo: "https://avatars.githubusercontent.com/u/76494427?s=200&v=4", type: "UI Components" },
   { name: "And More", logo: "https://static.dezeen.com/uploads/2021/11/meta-facebook-rebranding-name-news_dezeen_2364_col_sq.jpg", type: "Various" },
 ];

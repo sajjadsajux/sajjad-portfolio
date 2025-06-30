@@ -38,31 +38,6 @@ const experience = [
     ],
     closing: "UrBackoffices was more than just a job, it was a place where I grew, learned, and made great memories. I’m truly thankful for all the opportunities and experiences I gained along the way.",
   },
-  {
-    company: "TechSolutions Inc.",
-    position: "Frontend Developer",
-    duration: "Dec 2024 – Present",
-    summary: "Currently working as a Frontend Developer at TechSolutions Inc., focusing on building modern, responsive web applications and improving user experiences.",
-    responsibilities: [
-      {
-        title: "UI Development 🎨",
-        description: "Design and implement user-friendly interfaces using React and Tailwind CSS to create seamless user experiences.",
-      },
-      {
-        title: "Collaborative Projects 🤝",
-        description: "Work closely with backend developers and designers to integrate APIs and ensure consistent application behavior.",
-      },
-      {
-        title: "Performance Optimization ⚡",
-        description: "Analyze and optimize application performance for faster load times and smoother interactions.",
-      },
-      {
-        title: "Code Reviews & Mentorship 🧑‍🏫",
-        description: "Participate in code reviews and mentor junior developers to improve code quality and development standards.",
-      },
-    ],
-    closing: "Working at TechSolutions Inc. has enhanced my frontend development skills and given me the opportunity to contribute to impactful projects in a fast-paced environment.",
-  },
 ];
 
 const ExperienceCard = () => {
