@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import project from "../Projects/projects.json";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Projects = () => {
   const [showDetails, setShowDetails] = useState(null);
 
@@ -19,18 +20,26 @@ const Projects = () => {
     autoplaySpeed: 2000,
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div className="space-y-10 md:max-w-6xl mx-auto ">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-10 text-center">Projects</h2>
 
       {project.map((project, idx) => (
-        <div key={idx} className="bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-xl shadow-md p-6 flex flex-col lg:flex-row gap-6 hover:shadow-xl transition ">
+        <div key={idx} className="bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-xl shadow-md p-6 flex flex-col lg:flex-row gap-6 hover:shadow-xl transition " data-aos="zoom-in-down" data-aos-duration="5000" data-aos-mirror="true" data-aos-once="false">
           {/* Left: Image Section */}
           <div className="lg:w-1/2 w-full">
             {showDetails === idx ? (
               <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-3 ">
                 {project.images.map((img, i) => (
-                  <div key={i} className="w-full h-60 overflow-hidden rounded-lg">
+                  <div key={i} className="w-full h-96 overflow-hidden rounded-lg">
                     <img src={img} alt={`Project image ${i + 1}`} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
                   </div>
                 ))}

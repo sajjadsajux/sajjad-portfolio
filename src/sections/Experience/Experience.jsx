@@ -83,15 +83,15 @@ const ExperienceCard = () => {
             {/* Card */}
             <div className="flex flex-col glass bg-opacity-60 rounded-lg border border-cyan-700 p-6 shadow-md hover:shadow-lg transition duration-300 " data-aos="zoom-in-down" data-aos-duration="5000" data-aos-mirror="true" data-aos-once="false">
               <div className="flex justify-between items-center mb-1 ">
-                <h3 className="text-xl font-semibold text-secondary">{exp.position}</h3>
-                <span className="text-sm text-accent">{exp.duration}</span>
+                <h3 className="text-xl font-semibold text-base-100">{exp.position}</h3>
+                <span className="text-sm text-primary">{exp.duration}</span>
               </div>
-              <h4 className="text-accent font-medium mb-2">{exp.company}</h4>
+              <h4 className="text-primary font-medium mb-2">{exp.company}</h4>
               <p className="text-gray-200 mb-4 leading-relaxed text-sm md:text-base">{exp.summary}</p>
               <ul className="list-disc list-inside space-y-1 text-base-100 text-sm md:text-base max-h-36 overflow-y-auto pr-2">
                 {exp.responsibilities.map(({ title, description }, i) => (
                   <li key={i}>
-                    <strong className="text-cyan-300">{title}:</strong> {description}
+                    <strong className="text-primary">{title}:</strong> {description}
                   </li>
                 ))}
               </ul>

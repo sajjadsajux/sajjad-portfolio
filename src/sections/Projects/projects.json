@@ -1,52 +1,41 @@
 [
   {
     "title": "Fluently",
-    "shortDesc": "A React-based language tutor booking platform with secure authentication.",
-    "fullDesc": "Fluently helps users find and book sessions with language tutors. It includes features like authentication, profile editing, session management, and review systems—similar to Preply or Italki.",
+    "shortDesc": "A modern tutor booking platform to connect users with language tutors.",
+    "fullDesc": "Fluently is a full-stack online tutor booking platform that allows users to browse tutors by category, book sessions, manage their own tutorials, and submit reviews. Built with secure Firebase Authentication and JWT, it supports smooth animations, responsive UI, and light/dark theming.",
     "technologies": ["JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB"],
     "live": "https://fluently-lang.web.app",
     "clientRepo": "https://github.com/sajjadsajux/fluently-client",
     "serverRepo": "https://github.com/sajjadsajux/fluently-server",
-    "images": [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbF1fnaWAZTBc_-Kdq4cddu14XmvHXcEwk7w&s",
-      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
-      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg"
-    ],
-    "features": ["Tutor browsing & booking", "User reviews", "JWT protected routes", "Responsive design"],
+    "images": ["  https://iili.io/F5NmvZg.png", "https://iili.io/F5Nmeu1.png", "https://iili.io/F5NmkwF.png"],
+    "features": ["Browse and filter tutors", "Tutor booking system", "Manage personal tutorials", "JWT-protected routes", "Google Sign-In and Auth", "Review system", "Responsive design", "Theme toggle and animations"],
     "challenges": "Designing a flexible booking system and managing conditional route rendering.",
-    "futurePlans": "Add video calling integration and tutor availability calendar."
+    "futurePlans": "Integrate live video calling, tutor availability calendar, and enhanced review analytics."
   },
+
   {
     "title": "PlantTick",
     "shortDesc": "A responsive React app to track monthly plant care tasks with a calendar UI.",
-    "fullDesc": "PlantTick helps users manage their plant care based on monthly tips. It uses Swiper.js for a smooth calendar view, Firebase Auth, and supports dark/light theming.",
+    "fullDesc": "PlantTick helps plant lovers manage their collection by logging watering schedules, health notes, and growth tracking. Featuring authentication, CRUD operations, and a Swiper-powered monthly calendar, it's perfect for indoor/outdoor plant care.",
     "technologies": ["JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB", "JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB", "JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB"],
     "live": "https://planttick.web.app",
     "clientRepo": "https://github.com/sajjadsajux/planttick-client",
     "serverRepo": "",
-    "images": [
-      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
-      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbF1fnaWAZTBc_-Kdq4cddu14XmvHXcEwk7w&s"
-    ],
-    "features": ["Monthly care tips", "Responsive Swiper slider", "Theme toggle"],
+    "images": ["httphttps://iili.io/F5OnC8X.png", "https://iili.io/F5OnBat.png", "https://iili.io/F5OnqFI.png"],
+    "features": ["User authentication", "Add/update/delete plant entries", "Track watering & health", "Responsive UI", "Theme toggle", "Sort/filter by care schedules"],
     "challenges": "Ensuring full responsiveness and managing theme state across pages.",
-    "futurePlans": "Add user-specific plant tracking and email notifications."
+    "futurePlans": "Add reminders, calendar syncing, and plant image recognition for auto-tagging.."
   },
   {
     "title": "EventBangla",
     "shortDesc": "A platform to discover and explore local Bangladeshi events.",
-    "fullDesc": "EventBangla allows users to browse events by region, category, or popularity. Built using React Router and Firebase for secure routing and auth.",
+    "fullDesc": "Event Bangla lets users discover local events across categories like concerts, sports, workshops, and more. The app includes booking seats, protected profiles, animated UI, and a fully responsive layout designed for Bangladeshi audiences.",
     "technologies": ["React", "React Router", "Firebase Auth", "Tailwind CSS"],
     "live": "https://eventbangla.web.app",
     "clientRepo": "https://github.com/sajjadsajux/eventbangla-client",
     "serverRepo": "",
-    "images": [
-      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbF1fnaWAZTBc_-Kdq4cddu14XmvHXcEwk7w&s",
-      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg"
-    ],
-    "features": ["Event filtering", "User auth", "Dynamic route protection"],
+    "images": ["https://iili.io/F5Oo0gI.png", "https://iili.io/F5OoYsR.png", "https://iili.io/F5Ool0N.png"],
+    "features": ["Event booking system", "Firebase Authentication", "Profile update and management", "Protected routes for booking", "AOS scroll animations", "Responsive design with Swiper slider", "Toast and loading feedback"],
     "challenges": "Dynamic route handling and event-based filtering across categories.",
     "futurePlans": "Add RSVP feature and event reminders."
   }

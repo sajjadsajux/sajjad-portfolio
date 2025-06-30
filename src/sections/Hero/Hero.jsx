@@ -15,20 +15,20 @@ const Hero = () => {
 
       {/* Right - Text Content */}
       <div className="w-full md:w-3/5 text-center md:text-center  flex flex-col gap-5">
-        <p className="text-lg text-primary mb-1 font-bold">Hi, I'm</p>
+        <p className="text-2xl text-primary mb-1 font-bold">Hi, I'm</p>
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">MD Sajjad Hossain Saju</h1>
         <TypeAnimation sequence={["Junior MERN Stack Developer", 3000, "Open to Collaboration", 2000]} wrapper="h2" speed={30} repeat={Infinity} className="text-2xl md:text-4xl font-semibold text-primary mb-4" />
 
         {/* Social Links */}
         <div className="flex justify-center md:justify-center gap-5 text-2xl mb-6 ">
           <a href="https://github.com/sajjadsajux" target="_blank" rel="noreferrer" className="hover:text-primary text-base-100">
-            <FaGithub />
+            <FaGithub size={35} />
           </a>
           <a href="https://linkedin.com/in/sajjadsaju" target="_blank" rel="noreferrer" className="hover:text-primary text-base-100">
-            <FaLinkedin />
+            <FaLinkedin size={35} />
           </a>
           <a href="https://twitter.com/sajjadsajux" target="_blank" rel="noreferrer" className="hover:text-primary text-base-100">
-            <FaSquareXTwitter />
+            <FaSquareXTwitter size={35} />
           </a>
         </div>
 
