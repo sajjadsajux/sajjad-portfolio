@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <div className=" md:max-h-[60vh] flex flex-col md:flex-row items-center justify-between px-6  container mx-auto">
       {/* Left - Profile Image */}
-      <div className="w-full md:w-2/5 flex justify-center mb-8 md:mb-0 p-10">
-        <div className="w-48 h-48 md:w-full md:h-full rounded-full overflow-hidden shadow-lg border-4 border-base-200">
-          <img src="https://i.ibb.co/CpZdMVkn/Sajjad-Enhance.png" alt="Sajjad Saju" className="w-full h-full object-cover" />
+      <div className="w-full md:w-2/5 flex justify-center mb-8 md:mb-0 md:p-10">
+        <div className="w-full h-full md:w-full md:h-full rounded-3xl overflow-hidden shadow-lg border-4 border-base-200 " data-aos="zoom-in-right" data-aos-duration="1200">
+          <img src="https://i.ibb.co/mCnMS4RM/Sajjad-PFP2-Enhanced.png" alt="Sajjad Saju" className="w-full h-full object-cover transition-opacity duration-500 ease-in-out " />
         </div>
       </div>
 

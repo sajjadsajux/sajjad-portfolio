@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 import Particles from "../../components/animations/Particles/Particles";
 
 const experience = [
@@ -74,7 +74,7 @@ const ExperienceCard = () => {
     });
   }, []);
   return (
-    <div className="md:max-w-6xl mx-auto  px-6 py-10 max-w-3xl bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-lg">
+    <div className="md:max-w-6xl mx-auto  px-6 py-10  bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-lg">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-10 text-center">Experience</h2>
 
       <div className="relative  ">

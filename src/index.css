@@ -43,3 +43,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+.slick-prev {
+  left: 5px !important; /* Adjust the left padding */
+  z-index: 1;
+}
+.slick-next {
+  right: 5px !important; /* Adjust the right padding */
+  z-index: 1;
+}

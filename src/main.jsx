@@ -10,7 +10,7 @@ import SplashCursor from "./components/animations/SplashCursor/SplashCursor.jsx"
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ToastContainer />
-    <SplashCursor />
+    {/* <SplashCursor /> */}
 
     <RouterProvider router={router} />
   </StrictMode>

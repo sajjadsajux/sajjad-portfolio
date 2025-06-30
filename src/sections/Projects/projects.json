@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Fluently",
+    "shortDesc": "A React-based language tutor booking platform with secure authentication.",
+    "fullDesc": "Fluently helps users find and book sessions with language tutors. It includes features like authentication, profile editing, session management, and review systems—similar to Preply or Italki.",
+    "technologies": ["JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB"],
+    "live": "https://fluently-lang.web.app",
+    "clientRepo": "https://github.com/sajjadsajux/fluently-client",
+    "serverRepo": "https://github.com/sajjadsajux/fluently-server",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbF1fnaWAZTBc_-Kdq4cddu14XmvHXcEwk7w&s",
+      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg"
+    ],
+    "features": ["Tutor browsing & booking", "User reviews", "JWT protected routes", "Responsive design"],
+    "challenges": "Designing a flexible booking system and managing conditional route rendering.",
+    "futurePlans": "Add video calling integration and tutor availability calendar."
+  },
+  {
+    "title": "PlantTick",
+    "shortDesc": "A responsive React app to track monthly plant care tasks with a calendar UI.",
+    "fullDesc": "PlantTick helps users manage their plant care based on monthly tips. It uses Swiper.js for a smooth calendar view, Firebase Auth, and supports dark/light theming.",
+    "technologies": ["JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB", "JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB", "JavaScript", "React", "React Router", "Node.js", "Express.js", "MongoDB"],
+    "live": "https://planttick.web.app",
+    "clientRepo": "https://github.com/sajjadsajux/planttick-client",
+    "serverRepo": "",
+    "images": [
+      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
+      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbF1fnaWAZTBc_-Kdq4cddu14XmvHXcEwk7w&s"
+    ],
+    "features": ["Monthly care tips", "Responsive Swiper slider", "Theme toggle"],
+    "challenges": "Ensuring full responsiveness and managing theme state across pages.",
+    "futurePlans": "Add user-specific plant tracking and email notifications."
+  },
+  {
+    "title": "EventBangla",
+    "shortDesc": "A platform to discover and explore local Bangladeshi events.",
+    "fullDesc": "EventBangla allows users to browse events by region, category, or popularity. Built using React Router and Firebase for secure routing and auth.",
+    "technologies": ["React", "React Router", "Firebase Auth", "Tailwind CSS"],
+    "live": "https://eventbangla.web.app",
+    "clientRepo": "https://github.com/sajjadsajux/eventbangla-client",
+    "serverRepo": "",
+    "images": [
+      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbF1fnaWAZTBc_-Kdq4cddu14XmvHXcEwk7w&s",
+      "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?cs=srgb&dl=pexels-akilmazumder-1072824.jpg&fm=jpg"
+    ],
+    "features": ["Event filtering", "User auth", "Dynamic route protection"],
+    "challenges": "Dynamic route handling and event-based filtering across categories.",
+    "futurePlans": "Add RSVP feature and event reminders."
+  }
+]

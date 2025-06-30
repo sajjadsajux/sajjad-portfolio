@@ -25,9 +25,9 @@ const Home = () => {
       <section id="education" className="py-10 ">
         <Education />
       </section>
-      {/* <section id="projects" className="py-10 bg">
+      <section id="projects" className="py-10 ">
         <Projects />
-      </section> */}
+      </section>
       <section id="contact" className="py-10 ">
         <Contact />
       </section>
