@@ -5,14 +5,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 
 const MainLayOut = () => {
   return (
-    <div
-      className="bg-gradient-to-r from-[#000046] via-[#043644] to-[#000046]
-
-
-
-
-"
-    >
+    <div className="bg-gradient-to-r from-[#000046] via-[#043644] to-[#000046] ">
       <nav className="sticky top-0 z-50 glass">
         <Navbar></Navbar>
       </nav>

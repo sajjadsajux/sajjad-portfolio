@@ -23,7 +23,7 @@ const Skills = () => {
         <h3 className="text-2xl font-semibold text-base-200 mb-2 text-center">Frontend</h3>
         {/* <p className="text-center max-w-3xl mx-auto mb-6 text-base-100">{frontendSkillsIntro}</p> */}
 
-        <Marquee pauseOnHover gradient={false} speed={50} className="md:max-w-6xl mx-auto">
+        <Marquee pauseOnHover gradient={false} speed={50} className="md:max-w-7xl mx-auto">
           {frontendSkills.map(({ name, logo, type }, idx) => (
             <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-purple-900 via-indigo-900 to-blue-900 text-white rounded-2xl shadow-md p-4 mx-4 flex-shrink-0" style={{ userSelect: "none", width: "160px", height: "180px" }}>
               <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
@@ -39,7 +39,7 @@ const Skills = () => {
         <h3 className="text-2xl font-semibold text-base-200 mb-2 text-center">Backend</h3>
         {/* <p className="text-center max-w-3xl mx-auto mb-6 text-base-100">{backendSkillsIntro}</p> */}
 
-        <Marquee pauseOnHover gradient={false} speed={50} direction="right" className="md:max-w-6xl mx-auto">
+        <Marquee pauseOnHover gradient={false} speed={50} direction="right" className="md:max-w-7xl mx-auto">
           {backendSkills.map(({ name, logo, type }, idx) => (
             <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-green-600 via-teal-700 to-cyan-700 text-white rounded-xl shadow-lg p-4 mx-4 flex-shrink-0 cursor-default select-none" style={{ userSelect: "none", width: "160px", height: "180px" }}>
               <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
@@ -53,7 +53,7 @@ const Skills = () => {
       {/* Tools Section */}
       <section data-aos="zoom-in" className="md:p-0">
         <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Tools & Packages</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10  md:max-w-6xl mx-auto justify-items-center items-center space-y-5 md:space-y-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10  md:max-w-7xl mx-auto justify-items-center items-center space-y-5 md:space-y-3">
           {tools.map(({ name, logo, type }, idx) => (
             <div
               key={idx}

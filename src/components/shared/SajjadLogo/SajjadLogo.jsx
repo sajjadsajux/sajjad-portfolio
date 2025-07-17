@@ -7,7 +7,7 @@ const SajjadLogo = () => {
       <img
         src="/logo.png" // Replace with your actual logo path
         alt="Logo"
-        className="w-48  object-contain"
+        className="w-40  object-contain"
       />
     </Link>
   );

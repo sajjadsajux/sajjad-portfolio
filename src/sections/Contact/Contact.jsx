@@ -5,13 +5,13 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="md:max-w-6xl mx-auto px-4">
+    <div className="container mx-auto px-4">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Contact Me</h2>
       <p className="text-base md:text-lg text-base-100 text-center max-w-2xl mx-auto mb-12">
         I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi — feel free to reach out. You can connect with me through the form or directly via email or social platforms.
       </p>
 
-      <div className="flex flex-col md:flex-row gap-12 justify-center items-center  md:px-0 max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-12 justify-center items-center  md:px-0 max-w-7xl mx-auto">
         {/* Left: Contact Info */}
         <div className="w-full md:w-1/2 space-y-6  md:text-left ">
           <div className="">

@@ -11,11 +11,6 @@ const Navbar = () => {
         </a>
       </li>
       <li>
-        <a href="#hero" className="hover:text-primary">
-          Hero
-        </a>
-      </li>
-      <li>
         <a href="#about" className="hover:text-primary">
           About Me
         </a>
@@ -25,11 +20,11 @@ const Navbar = () => {
           Skills
         </a>
       </li>
-      <li>
+      {/* <li>
         <a href="#experience" className="hover:text-primary">
           Experience
         </a>
-      </li>
+      </li> */}
       <li>
         <a href="#education" className="hover:text-primary">
           Education
@@ -48,7 +43,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar  shadow-sm text-white">
+    <div className="navbar  shadow-sm text-white container mx-auto">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,7 +52,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />{" "}
             </svg>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content glass rounded-box z-1 mt-3 w-24 p-2 shadow">
+          <ul tabIndex={0} className="menu menu-sm dropdown-content bg-primary rounded-box z-1 mt-3 w-24 p-2 shadow text-black">
             {navLinks}
           </ul>
         </div>
@@ -69,7 +64,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-2 ">
-        <a href="#contact" className=" btn btn-sm md:btn-md btn-primary text-black dark:text-white ">
+        <a href="#contact" className=" btn btn-sm  btn-primary text-black dark:text-white ">
           Contact
         </a>
         {/* <ThemeToggle></ThemeToggle> */}

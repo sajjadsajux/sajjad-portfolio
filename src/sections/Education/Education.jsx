@@ -16,7 +16,7 @@ const Education = () => {
     <div className="px-4  text-base-content">
       <h2 className="text-4xl font-extrabold text-primary mb-12 text-center tracking-wide">Education</h2>
 
-      <div className="max-w-6xl mx-auto relative space-y-12 before:absolute before:top-0 before:left-7 before:h-full before:w-1 before:bg-gradient-to-b from-green-400/40 to-green-700/40">
+      <div className="max-w-7xl mx-auto relative space-y-12 before:absolute before:top-0 before:left-7 before:h-full before:w-1 before:bg-gradient-to-b from-green-400/40 to-green-700/40">
         {education.map((edu, index) => (
           <div
             key={index}

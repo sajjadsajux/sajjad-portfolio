@@ -29,7 +29,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="space-y-10 md:max-w-6xl mx-auto ">
+    <div className="space-y-10 md:max-w-7xl mx-auto ">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-10 text-center">Projects</h2>
 
       {project.map((project, idx) => (

@@ -9,7 +9,7 @@
     "serverRepo": "https://github.com/sajjadsajux/fluently-server",
     "images": ["  https://iili.io/F5NmvZg.png", "https://iili.io/F5Nmeu1.png", "https://iili.io/F5NmkwF.png"],
     "features": ["Browse and filter tutors", "Tutor booking system", "Manage personal tutorials", "JWT-protected routes", "Google Sign-In and Auth", "Review system", "Responsive design", "Theme toggle and animations"],
-    "challenges": "Designing a flexible booking system and managing conditional route rendering.",
+    "challenges": "Implementing JWT",
     "futurePlans": "Integrate live video calling, tutor availability calendar, and enhanced review analytics."
   },
 
@@ -21,9 +21,9 @@
     "live": "https://planttick.web.app",
     "clientRepo": "https://github.com/sajjadsajux/planttick-client",
     "serverRepo": "",
-    "images": ["httphttps://iili.io/F5OnC8X.png", "https://iili.io/F5OnBat.png", "https://iili.io/F5OnqFI.png"],
+    "images": ["https://iili.io/F5OnC8X.md.png", "https://iili.io/F5OnBat.png", "https://iili.io/F5OnqFI.png"],
     "features": ["User authentication", "Add/update/delete plant entries", "Track watering & health", "Responsive UI", "Theme toggle", "Sort/filter by care schedules"],
-    "challenges": "Ensuring full responsiveness and managing theme state across pages.",
+    "challenges": "Implementing sorting feature from the backend.",
     "futurePlans": "Add reminders, calendar syncing, and plant image recognition for auto-tagging.."
   },
   {
@@ -36,7 +36,7 @@
     "serverRepo": "",
     "images": ["https://iili.io/F5Oo0gI.png", "https://iili.io/F5OoYsR.png", "https://iili.io/F5Ool0N.png"],
     "features": ["Event booking system", "Firebase Authentication", "Profile update and management", "Protected routes for booking", "AOS scroll animations", "Responsive design with Swiper slider", "Toast and loading feedback"],
-    "challenges": "Dynamic route handling and event-based filtering across categories.",
+    "challenges": "Updating user details from the user profile section.",
     "futurePlans": "Add RSVP feature and event reminders."
   }
 ]
