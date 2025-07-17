@@ -44,24 +44,24 @@ const ContactForm = () => {
     <div className="w-full ">
       <form ref={form} onSubmit={sendEmail} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block mb-1 font-medium text-base-100">
+          <label htmlFor="name" className="block mb-1 font-medium ">
             Name
           </label>
-          <input type="text" name="user_name" id="name" placeholder="Your Name" className="input input-bordered w-full" required />
+          <input type="text" name="user_name" id="name" placeholder="Your Name" className="input text-black input-bordered w-full" required />
         </div>
 
         <div>
-          <label htmlFor="email" className="block mb-1 font-medium text-base-100">
+          <label htmlFor="email" className="block mb-1 font-medium ">
             Email
           </label>
-          <input type="email" name="user_email" id="email" placeholder="you@example.com" className="input input-bordered w-full" required />
+          <input type="email" name="user_email" id="email" placeholder="you@example.com" className="input text-black input-bordered w-full" required />
         </div>
 
         <div>
-          <label htmlFor="message" className="block mb-1 font-medium text-base-100">
+          <label htmlFor="message" className="block mb-1 font-medium ">
             Message
           </label>
-          <textarea name="message" id="message" rows={5} placeholder="Your message..." className="textarea textarea-bordered w-full resize-none" required />
+          <textarea name="message" id="message" rows={5} placeholder="Your message..." className="textarea text-black textarea-bordered w-full resize-none" required />
         </div>
 
         <input type="submit" value="Send Message" className="btn btn-primary w-full text-black" />

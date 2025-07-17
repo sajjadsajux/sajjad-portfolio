@@ -44,7 +44,7 @@ const Contact = () => {
 
           {/* Social Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-base-100">Follow Me</h3>
+            <h3 className="text-xl font-semibold mb-4 text-base-100">Connect Me</h3>
             <div className="flex gap-6 text-4xl text-primary animate-bounce">
               <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="hover:text-secondary">
                 <FaGithub />
