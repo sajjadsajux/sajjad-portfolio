@@ -53,7 +53,7 @@ const Skills = () => {
       {/* Tools Section */}
       <section data-aos="zoom-in" className="md:p-0">
         <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Tools & Packages</h3>
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-10  md:max-w-7xl mx-auto justify-items-center items-center space-y-5 md:space-y-3">
+        <div className="grid grid-cols-3  md:grid-cols-5 lg:grid-cols-10  md:max-w-7xl mx-auto  md:justify-between items-center gap-3 md:gap-0 md:space-y-3">
           {tools.map(({ name, logo, type }, idx) => (
             <div
               key={idx}

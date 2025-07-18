@@ -8,16 +8,16 @@ const About = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">About Me</h2>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
         {/* Timeline - Left Side (col-span-2) */}
         <div className="md:col-span-2 border-l-2 border-primary pl-6 space-y-10">
           {/* Step 1 */}
-          <div>
+          <div className="">
             <h3 className="text-xl font-semibold text-primary mb-2 flex items-center gap-2">
               <FaHandPeace className="text-lg" />
               <TypeAnimation sequence={["Introduction", 2000, "", 1000]} wrapper="span" speed={50} repeat={Infinity} />
             </h3>
-            <p className="text-base leading-relaxed text-base-100">
+            <p className="text-base leading-relaxed text-base-100 ">
               Hi! I'm <strong>Md Sajjad Hossain Saju</strong>, a <strong>Junior MERN Stack Developer</strong> who loves building full-stack websites using the MERN stack. I’ve already worked with technologies like <strong>HTML, CSS, JavaScript, React, React Router, MongoDB</strong>, and I'm
               continuously learning and experimenting with new tools. I enjoy turning creative ideas into real, functional web applications, especially with a clean and responsive UI.
             </p>
