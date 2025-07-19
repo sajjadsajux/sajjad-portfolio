@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import project from "../Projects/projects.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 const Projects = () => {
   const [showDetails, setShowDetails] = useState(null);
 
@@ -29,36 +30,37 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="space-y-10 md:max-w-7xl mx-auto ">
-      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-10 text-center">Projects</h2>
+    <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] py-12 px-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Projects</h2>
 
-      {project.map((project, idx) => (
-        <div key={idx} className="bg-gradient-to-r from-[#000046] via-[#093744] to-[#000046] rounded-xl shadow-md p-6 flex flex-col lg:flex-row gap-6 hover:shadow-xl transition " data-aos="zoom-in-down" data-aos-duration="5000" data-aos-mirror="true" data-aos-once="false">
-          {/* Left: Image Section */}
-          <div className="lg:w-1/2 w-full">
-            {showDetails === idx ? (
-              <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-3 ">
-                {project.images.map((img, i) => (
-                  <div key={i} className="w-full h-96 overflow-hidden rounded-lg">
-                    <img src={img} alt={`Project image ${i + 1}`} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <Slider {...settings} className="">
-                {project.images.map((img, i) => (
-                  <img key={i} src={img} alt={`Project screenshot ${i + 1}`} className="rounded-lg object-cover w-full h-80" />
-                ))}
-              </Slider>
-            )}
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:max-w-7xl mx-auto bg-black/30 p-6 rounded-lg">
+        {project.map((project, idx) => (
+          <div key={idx} className="bg-white/10 rounded-xl shadow-md p-4  flex flex-col justify-between hover:shadow-xl transition transform hover:scale-[1.02]" data-aos="zoom-in-up">
+            {/* Image Section */}
+            <div className="w-full mb-4">
+              {showDetails === idx ? (
+                <div className="grid grid-cols-1 gap-2">
+                  {project.images.map((img, i) => (
+                    <img key={i} src={img} alt={`Project image ${i + 1}`} className="w-full h-64 object-cover rounded-lg" />
+                  ))}
+                </div>
+              ) : (
+                <Slider {...settings}>
+                  {project.images.map((img, i) => (
+                    <img key={i} src={img} alt={`Project screenshot ${i + 1}`} className="w-full h-64 object-cover rounded-lg" />
+                  ))}
+                </Slider>
+              )}
+            </div>
 
-          {/* Right: Info Section */}
-          <div className="lg:w-1/2 w-full space-y-6">
-            <h3 className="text-3xl font-bold text-primary">{project.title}</h3>
-            <p className="text-base-100 text-xl">{project.shortDesc}</p>
+            {/* Title & Description */}
+            <div className="mb-3">
+              <h3 className="text-lg font-bold text-primary mb-1">{project.title}</h3>
+              <div className="text-sm text-base-100 max-h-[3.2rem] overflow-auto pr-2 scrollbar-thin whitespace-normal leading-snug">{project.shortDesc}</div>
+            </div>
 
-            <div className="flex gap-2 mt-2 overflow-x-auto whitespace-nowrap mr-2">
+            {/* Tech Badges */}
+            <div className="flex gap-2 mb-3 overflow-x-auto overflow-y-hidden flex-nowrap whitespace-nowrap scrollbar-thin py-1 pr-2">
               {project.technologies.map((tech, i) => (
                 <span key={i} className="badge badge-outline badge-primary text-xs text-orange-500">
                   {tech}
@@ -66,41 +68,30 @@ const Projects = () => {
               ))}
             </div>
 
-            {/* Action Buttons Section */}
-            <div className="mt-4 space-y-3">
-              {/* Live Site Button - Centered */}
-              <div className="flex justify-center">
-                <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-sm btn-primary text-black text-base">
-                  Live Site <FaExternalLinkAlt size={20} className="ml-1" />
-                </a>
-              </div>
-
-              {/* GitHub Repos - Side by side */}
-              <div className="flex justify-center gap-4">
-                <a href={project.clientRepo} target="_blank" rel="noreferrer" className="btn btn-sm btn-outline text-base text-base-100">
-                  Client Repo <FaGithub size={20} className="ml-1" />
-                </a>
-              </div>
-
-              {/* View Details Button - Centered */}
-              <div className="flex justify-center">
-                <button onClick={() => setShowDetails(showDetails === idx ? null : idx)} className="btn btn-sm btn-primary text-black text-base">
-                  {showDetails === idx ? "Hide Details" : "View Details"}
-                </button>
-              </div>
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-3 mb-4">
+              <a href={project.live} className="btn btn-xs btn-primary flex items-center" target="_blank" rel="noreferrer">
+                Live <FaExternalLinkAlt className="ml-1" />
+              </a>
+              <a href={project.clientRepo} className="btn btn-xs btn-outline flex items-center text-base-100" target="_blank" rel="noreferrer">
+                Client <FaGithub className="ml-1" />
+              </a>
+              <button onClick={() => setShowDetails(showDetails === idx ? null : idx)} className="btn btn-xs btn-primary">
+                {showDetails === idx ? "Hide Details" : "View Details"}
+              </button>
             </div>
 
-            {/* Expandable Detailed Info */}
+            {/* Expandable Section */}
             {showDetails === idx && (
-              <div className="mt-6 border-t border-base-300 pt-4 space-y-4">
+              <div className="mt-3 border-t border-base-300 pt-3 text-sm text-base-100 overflow-y-auto max-h-[240px] pr-2 space-y-3">
                 <div>
-                  <h4 className="font-semibold text-lg text-primary">Full Description:</h4>
-                  <p className="text-base-100">{project.fullDesc}</p>
+                  <h4 className="font-semibold text-primary mb-1">Full Description:</h4>
+                  <p>{project.fullDesc}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-primary">Main Features:</h4>
-                  <ul className="list-disc list-inside text-base-100">
+                  <h4 className="font-semibold text-primary mb-1">Main Features:</h4>
+                  <ul className="list-disc ml-5">
                     {project.features.map((f, i) => (
                       <li key={i}>{f}</li>
                     ))}
@@ -108,20 +99,20 @@ const Projects = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-primary">Challenges:</h4>
-                  <p className="text-base-100">{project.challenges}</p>
+                  <h4 className="font-semibold text-primary mb-1">Challenges:</h4>
+                  <p>{project.challenges}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-primary">Future Plans:</h4>
-                  <p className="text-base-100">{project.futurePlans}</p>
+                  <h4 className="font-semibold text-primary mb-1">Future Plans:</h4>
+                  <p>{project.futurePlans}</p>
                 </div>
               </div>
             )}
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

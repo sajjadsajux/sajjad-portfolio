@@ -1,47 +1,49 @@
 import React from "react";
 import ThemeToggle from "../../Theme/ThemeToggle";
 import SajjadLogo from "../SajjadLogo/SajjadLogo";
+import { FaHome, FaUser, FaTools, FaGraduationCap, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <a href="#home" className="hover:text-primary">
-          Home
+        <a href="#home" className="flex items-center gap-2 hover:text-primary">
+          <FaHome /> Home
         </a>
       </li>
       <li>
-        <a href="#about" className="hover:text-primary">
-          About Me
+        <a href="#about" className="flex items-center gap-2 hover:text-primary">
+          <FaUser /> About Me
         </a>
       </li>
       <li>
-        <a href="#skills" className="hover:text-primary">
-          Skills
+        <a href="#skills" className="flex items-center gap-2 hover:text-primary">
+          <FaTools /> Skills
         </a>
       </li>
       {/* <li>
-        <a href="#experience" className="hover:text-primary">
-          Experience
-        </a>
-      </li> */}
+      <a href="#experience" className="flex items-center gap-2 hover:text-primary">
+        <FaBriefcase /> Experience
+      </a>
+    </li> */}
       <li>
-        <a href="#education" className="hover:text-primary">
-          Education
-        </a>
-      </li>
-      <li>
-        <a href="#projects" className="hover:text-primary">
-          Projects
+        <a href="#education" className="flex items-center gap-2 hover:text-primary">
+          <FaGraduationCap /> Education
         </a>
       </li>
       <li>
-        <a href="#contact" className="hover:text-primary">
-          Contact
+        <a href="#projects" className="flex items-center gap-2 hover:text-primary">
+          <FaProjectDiagram /> Projects
+        </a>
+      </li>
+      <li>
+        <a href="#contact" className="flex items-center gap-2 hover:text-primary">
+          <FaEnvelope /> Contact
         </a>
       </li>
     </>
   );
+
   return (
     <div className="navbar   text-white container mx-auto ">
       <div className="navbar-start ">
@@ -61,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 glass rounded-2xl  font-semibold text-primary text-base ">{navLinks}</ul>
+        <ul className="menu menu-horizontal px-1 glass rounded-2xl  font-semibold text-white text-base ">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-2 ">
         <a href="#contact" className=" btn btn-sm  btn-primary text-black dark:text-white ">

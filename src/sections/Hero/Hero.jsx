@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <div className="w-full px-4 py-12 lg:max-h-[65vh] md:max-h-[70vh]">
+    <div className="container mx-auto px-4 py-12 lg:min-h-[70vh] md:max-h-[70vh]">
       <div className="flex flex-col md:flex-row items-center justify-between md:items-stretch gap-8 md:gap-16">
         {/* Left - Profile Image */}
         <div className="w-full md:w-2/5 flex justify-center md:justify-start">

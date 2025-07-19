@@ -44,21 +44,21 @@ const ContactForm = () => {
     <div className="w-full ">
       <form ref={form} onSubmit={sendEmail} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block mb-1 font-medium ">
+          <label htmlFor="name" className="block mb-1 font-medium text-white">
             Name
           </label>
           <input type="text" name="user_name" id="name" placeholder="Your Name" className="input text-black input-bordered w-full" required />
         </div>
 
         <div>
-          <label htmlFor="email" className="block mb-1 font-medium ">
+          <label htmlFor="email" className="block mb-1 font-medium text-white">
             Email
           </label>
           <input type="email" name="user_email" id="email" placeholder="you@example.com" className="input text-black input-bordered w-full" required />
         </div>
 
         <div>
-          <label htmlFor="message" className="block mb-1 font-medium ">
+          <label htmlFor="message" className="block mb-1 font-medium text-white">
             Message
           </label>
           <textarea name="message" id="message" rows={5} placeholder="Your message..." className="textarea text-black textarea-bordered w-full resize-none" required />

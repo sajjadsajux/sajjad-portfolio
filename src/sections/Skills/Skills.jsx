@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2500,
+      duration: 1800,
       once: false,
       mirror: true,
       easing: "ease-in-out",
@@ -15,60 +15,55 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4   space-y-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Skills & Technologies</h2>
+    <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] min-h-screen py-16 text-white">
+      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">Skills & Technologies</h2>
 
-      {/* Frontend Section */}
-      <section data-aos="fade-up">
-        <h3 className="text-2xl font-semibold text-base-200 mb-2 text-center">Frontend</h3>
-        {/* <p className="text-center max-w-3xl mx-auto mb-6 text-base-100">{frontendSkillsIntro}</p> */}
+      <div className="max-w-7xl mx-auto px-4 space-y-4 bg-black/30 backdrop-blur-md p-6 rounded-lg">
+        {/* Frontend Section */}
+        <section data-aos="fade-up">
+          <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Frontend</h3>
+          <Marquee pauseOnHover gradient={false} speed={50} className="md:max-w-7xl mx-auto">
+            {frontendSkills.map(({ name, logo, type }, idx) => (
+              <div key={idx} className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-xl shadow-md p-4 mx-3 flex-shrink-0 hover:scale-105 transition-transform duration-300" style={{ width: "140px", height: "160px" }}>
+                <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
+                <span className="font-semibold text-lg text-center">{name}</span>
+                <small className="text-sm opacity-70 text-center">{type}</small>
+              </div>
+            ))}
+          </Marquee>
+        </section>
 
-        <Marquee pauseOnHover gradient={false} speed={50} className="md:max-w-7xl mx-auto">
-          {frontendSkills.map(({ name, logo, type }, idx) => (
-            <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-purple-900 via-indigo-900 to-blue-900 text-white rounded-2xl shadow-md p-4 mx-4 flex-shrink-0" style={{ userSelect: "none", width: "160px", height: "180px" }}>
-              <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
-              <span className="font-semibold text-lg text-center">{name}</span>
-              <small className="text-sm opacity-80 text-center">{type}</small>
-            </div>
-          ))}
-        </Marquee>
-      </section>
+        {/* Backend Section */}
+        <section data-aos="fade-left">
+          <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Backend</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {backendSkills.map(({ name, logo, type }, idx) => (
+              <div key={idx} className="flex items-center gap-4 bg-white/10 backdrop-blur-sm border-l-4 border-primary px-5 py-4 rounded-lg hover:scale-[1.03] transition-transform duration-300">
+                <img src={logo} alt={name} className="w-12 h-12 object-contain" />
+                <div>
+                  <h4 className="text-lg font-semibold">{name}</h4>
+                  <p className="text-sm text-gray-200/70">{type}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
-      {/* Backend Section */}
-      <section data-aos="fade-right">
-        <h3 className="text-2xl font-semibold text-base-200 mb-2 text-center">Backend</h3>
-        {/* <p className="text-center max-w-3xl mx-auto mb-6 text-base-100">{backendSkillsIntro}</p> */}
-
-        <Marquee pauseOnHover gradient={false} speed={50} direction="right" className="md:max-w-7xl mx-auto">
-          {backendSkills.map(({ name, logo, type }, idx) => (
-            <div key={idx} className="flex flex-col items-center bg-gradient-to-tr from-green-600 via-teal-700 to-cyan-700 text-white rounded-xl shadow-lg p-4 mx-4 flex-shrink-0 cursor-default select-none" style={{ userSelect: "none", width: "160px", height: "180px" }}>
-              <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
-              <span className="font-semibold text-lg text-center">{name}</span>
-              <small className="text-sm opacity-80 text-center">{type}</small>
-            </div>
-          ))}
-        </Marquee>
-      </section>
-
-      {/* Tools Section */}
-      <section data-aos="zoom-in" className="md:p-0">
-        <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Tools & Packages</h3>
-        <div className="grid grid-cols-3  md:grid-cols-5 lg:grid-cols-10  md:max-w-7xl mx-auto  md:justify-between items-center gap-3 md:gap-0 md:space-y-3">
-          {tools.map(({ name, logo, type }, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center bg-gradient-to-tr from-purple-900 via-indigo-900 to-blue-900 text-white rounded-xl border border-transparent shadow-md hover:shadow-xl transition p-3 cursor-pointer select-none"
-              title={`${name} — ${type}`}
-              style={{ width: "100px", height: "140px" }}
-            >
-              <img src={logo} alt={name} className="w-10 h-10 mb-1 object-contain" />
-              <span className="font-semibold text-sm text-center">{name}</span>
-              <small className="text-xs text-white/80 text-center mt-0.5">{type}</small>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
+        {/* Tools Section */}
+        <section data-aos="zoom-in-up" className="mt-10">
+          <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Tools & Packages</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {tools.map(({ name, logo, type }, idx) => (
+              <div key={idx} className="flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full border border-white/20 backdrop-blur-md hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-default">
+                <img src={logo} alt={name} className="w-5 h-5 object-contain" />
+                <span className="text-sm font-medium">{name}</span>
+                <span className="text-xs opacity-50">({type})</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </section>
   );
 };
 
