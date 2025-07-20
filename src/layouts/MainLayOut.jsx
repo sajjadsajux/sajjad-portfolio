@@ -5,7 +5,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 
 const MainLayOut = () => {
   return (
-    <div className="min-h-screen w-full   ">
+    <div className="min-h-screen w-full   montserrat-font">
       {/* Dark Dotted Grid Background */}
 
       {/* Content Layer Above Background */}
