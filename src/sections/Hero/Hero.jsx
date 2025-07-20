@@ -3,10 +3,11 @@ import { FaGithub, FaLinkedin, FaEye, FaDownload, FaTwitter } from "react-icons/
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 lg:py-12 md:min-h-[82vh] lg:min-h-[80vh] overflow-hidden ">
+    <div className="max-w-7xl mx-auto px-4 lg:py-2 md:min-h-[82vh] lg:min-h-[80vh] overflow-hidden ">
       <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-10 pt-20">
         {/* Left - Profile Image with Animated Ring & Tilt */}
         {/* Left - Profile Image with Animated Ring & Tilt */}
@@ -27,7 +28,7 @@ const Hero = () => {
               <FaLinkedin size={35} />
             </a>
             <a href="https://twitter.com/sajjadsajux" target="_blank" rel="noreferrer" className="hover:text-primary transition">
-              <FaTwitter size={35} />
+              <FaXTwitter size={35} />
             </a>
           </div>
         </motion.div>
@@ -36,7 +37,7 @@ const Hero = () => {
         <motion.div initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} className="w-full md:w-3/5 text-center lg:text-left space-y-6">
           <p className="text-xl sm:text-2xl font-bold text-primary">Hi, I'm</p>
 
-          <h1 className="text-4xl lg:text-6xl font-extrabold text-white leading-tight">MD Sajjad Hossain Saju</h1>
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight">MD Sajjad Hossain Saju</h1>
 
           {/* Type Animation */}
           <TypeAnimation sequence={["Junior MERN Stack Developer", 2000, "", 500]} wrapper="h2" speed={40} repeat={Infinity} className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary mt-2" />
@@ -72,10 +73,10 @@ const Hero = () => {
 
           {/* Resume Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center lg:justify-start">
-            <a href="https://drive.google.com/file/d/1i12Otf2_31d-8wypWisx1MRQFekLZJvw/preview" target="_blank" rel="noreferrer" className="btn btn-outline rounded-full text-white hover:bg-primary hover:text-black flex items-center gap-2">
+            <a href="https://drive.google.com/file/d/1i12Otf2_31d-8wypWisx1MRQFekLZJvw/preview" target="_blank" rel="noreferrer" className="btn btn-outline rounded-2xl text-white hover:bg-primary hover:text-black flex items-center gap-2">
               <FaEye /> View Resume
             </a>
-            <a href="https://drive.google.com/uc?export=download&id=1i12Otf2_31d-8wypWisx1MRQFekLZJvw" className="btn btn-primary rounded-full text-black hover:bg-primary-focus flex items-center gap-2">
+            <a href="https://drive.google.com/uc?export=download&id=1i12Otf2_31d-8wypWisx1MRQFekLZJvw" className="btn btn-primary rounded-2xl text-black hover:bg-primary-focus flex items-center gap-2">
               <FaDownload /> Download Resume
             </a>
           </div>

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaHandPeace, FaBookOpen, FaLightbulb, FaBullseye, FaPaintBrush, FaRocket, FaGlobe, FaMobileAlt, FaCamera, FaFutbol, FaHeadphones, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
   // First accordion item open by default:
   const [openIndex, setOpenIndex] = useState(0);
@@ -10,6 +11,15 @@ const About = () => {
   const toggleAccordion = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1800,
+      once: false,
+      mirror: true,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   const leftItems = [
     {
@@ -75,7 +85,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 bg-black/30 backdrop-blur-md p-6 rounded-lg">
           {/* LEFT SIDE - Accordion Timeline */}
-          <div className="md:col-span-2 space-y-6 relative">
+          <div data-aos="fade-up" className="md:col-span-2 space-y-6 relative">
             <div className="absolute left-4 top-0 bottom-0 w-1 bg-primary/30 rounded-full hidden md:block"></div>
 
             {leftItems.map((item, index) => (
@@ -98,12 +108,12 @@ const About = () => {
           </div>
 
           {/* RIGHT SIDE - Tabs */}
-          <div className="space-y-6">
+          <div className="space-y-6 " data-aos="fade-left">
             <div className="flex justify-center md:justify-start gap-4 mb-10">
-              <button className={`px-4 py-2 rounded-full text-sm font-semibold ${activeTab === "interests" ? "bg-primary text-white" : "bg-white text-black animate-bounce"}`} onClick={() => setActiveTab("interests")}>
+              <button className={`px-4 py-2 rounded-full text-sm font-semibold ${activeTab === "interests" ? "bg-primary text-white animate-none" : "bg-white text-black animate-pulse"}`} onClick={() => setActiveTab("interests")}>
                 Interests
               </button>
-              <button className={`px-4 py-2 rounded-full text-sm font-semibold animate-bounce ${activeTab === "fun" ? "bg-primary text-white animate-none" : "bg-white text-black "}`} onClick={() => setActiveTab("fun")}>
+              <button className={`px-4 py-2 rounded-full text-sm font-semibold  ${activeTab === "fun" ? "bg-primary text-white animate-none" : "bg-white text-black animate-pulse"}`} onClick={() => setActiveTab("fun")}>
                 Fun Facts
               </button>
             </div>

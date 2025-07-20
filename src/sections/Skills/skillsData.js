@@ -3,22 +3,21 @@ export const frontendSkillsIntro = "Frontend development focuses on creating the
 export const backendSkillsIntro = "Backend development handles server-side logic, databases, and API integrations to ensure everything works smoothly behind the scenes.";
 
 export const frontendSkills = [
-  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", type: "Markup" },
-  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", type: "Styling" },
-  { name: "Tailwind CSS", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s", type: "Utility-First CSS" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", type: "Programming Language" },
-  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", type: "Library" },
-  { name: "React Router", logo: "https://reactrouter.com/favicon.ico", type: "Routing" },
-  { name: "DaisyUI", logo: "https://daisyui.com/favicon.ico", type: "Component Library" },
+  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", type: "Markup Language" },
+  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", type: "Style Sheet Language" },
+  { name: "Tailwind CSS", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s", type: "Utility-First Framework" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", type: "Scripting Language" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", type: "UI Library" },
+  { name: "React Router", logo: "https://reactrouter.com/favicon.ico", type: "Client-side Routing" },
 ];
 
 export const backendSkills = [
-  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", type: "Runtime Environment" },
-  { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", type: "Framework" },
-  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", type: "Database" },
-  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", type: "Backend-as-a-Service" },
-  { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg", type: "Authentication" },
-  { name: "REST API", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszCXd5b0Fpuxou1hMOiLTtygtpelEtIrBBw&s", type: "API Design" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", type: "JavaScript Runtime" },
+  { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", type: "Web Framework" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", type: "NoSQL Database" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", type: "BaaS Platform" },
+  { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg", type: "Token-based Auth" },
+  { name: "REST API", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszCXd5b0Fpuxou1hMOiLTtygtpelEtIrBBw&s", type: "Web API Architecture" },
 ];
 
 export const tools = [

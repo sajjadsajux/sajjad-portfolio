@@ -24,7 +24,7 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Frontend</h3>
           <Marquee pauseOnHover gradient={false} speed={50} className="md:max-w-7xl mx-auto">
             {frontendSkills.map(({ name, logo, type }, idx) => (
-              <div key={idx} className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-xl shadow-md p-4 mx-3 flex-shrink-0 hover:scale-105 transition-transform duration-300" style={{ width: "140px", height: "160px" }}>
+              <div key={idx} className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-xl shadow-md p-5 mx-3 flex-shrink-0 hover:scale-105 transition-transform duration-300" style={{ width: "180px", height: "140px" }}>
                 <img src={logo} alt={name} className="w-16 h-16 mb-3 object-contain" />
                 <span className="font-semibold text-lg text-center">{name}</span>
                 <small className="text-sm opacity-70 text-center">{type}</small>
