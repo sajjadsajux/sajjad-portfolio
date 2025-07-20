@@ -2,12 +2,15 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
+import { TypeAnimation } from "react-type-animation";
 
 const Contact = () => {
   return (
     <section className="bg-gradient-to-r from-[#000428] to-[#004e92] py-12 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary">Contact Me</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-primary">
+          <TypeAnimation sequence={["Let's Talk", 1500, "Get in Touch", 1500, "Say Hello!", 1500]} wrapper="span" speed={50} repeat={Infinity} />
+        </h2>
         <p className="text-base md:text-lg text-base-100 mt-4 max-w-2xl mx-auto">Have a question or want to work together? Reach out via the form or my contact details below.</p>
       </div>
 

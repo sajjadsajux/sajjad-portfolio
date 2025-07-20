@@ -11,9 +11,8 @@ import ArrowDown from "../../components/ArrowDown/ArrowDown";
 const Home = () => {
   return (
     <div id="home" className="scroll-mt-24">
-      <section id="" className="py-10 scroll-mt-16 bg-[linear-gradient(to_right,_#000428,_#004e92)]">
+      <section id="" className=" scroll-mt-16 bg-[linear-gradient(to_right,_#000428,_#004e92)]">
         <Hero />
-        <ArrowDown targetId="about" /> {/* Add arrow here */}
       </section>
       <section id="about" className=" scroll-mt-16 ">
         <About />
