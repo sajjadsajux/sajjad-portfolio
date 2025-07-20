@@ -66,7 +66,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 glass rounded-2xl  font-semibold text-white text-base ">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-2 ">
-        <a href="#contact" className=" btn btn-sm  btn-primary text-black dark:text-white ">
+        <a href="#contact" className=" btn btn-sm   btn-primary text-black dark:text-white ">
           Contact
         </a>
         {/* <ThemeToggle></ThemeToggle> */}
