@@ -18,7 +18,7 @@ const Contact = () => {
     <section className="bg-gradient-to-r from-[#000428] to-[#004e92] py-12 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-primary">
-          <TypeAnimation sequence={["Let's Talk", 1500, "Get in Touch", 1500, "Say Hello!", 1500]} wrapper="span" speed={50} repeat={Infinity} />
+          <TypeAnimation sequence={["Need a Developer?", 1500, "Discuss Opportunities", 1500, "Start a Collaboration", 1500, "Your Project, My Code", 1500, "Let's Talk", 1500]} wrapper="span" speed={50} repeat={Infinity} />
         </h2>
         <p className="text-base md:text-lg text-base-100 mt-4 max-w-2xl mx-auto">Have a question or want to work together? Reach out via the form or my contact details below.</p>
       </div>

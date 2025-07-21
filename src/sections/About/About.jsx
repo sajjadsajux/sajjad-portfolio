@@ -110,7 +110,7 @@ const About = () => {
           {/* RIGHT SIDE - Tabs */}
           <div className="space-y-6 " data-aos="fade-left">
             <div className="flex justify-center md:justify-start gap-4 mb-10">
-              <button className={`px-4 py-2 rounded-full text-sm font-semibold ${activeTab === "interests" ? "bg-primary text-white animate-none" : "bg-white text-black animate-pulse"}`} onClick={() => setActiveTab("interests")}>
+              <button className={`px-4 py-2 rounded-full text-sm font-semibold ${activeTab === "interests" ? "bg-primary text-black animate-none" : "bg-white text-black animate-pulse"}`} onClick={() => setActiveTab("interests")}>
                 Interests
               </button>
               <button className={`px-4 py-2 rounded-full text-sm font-semibold  ${activeTab === "fun" ? "bg-primary text-white animate-none" : "bg-white text-black animate-pulse"}`} onClick={() => setActiveTab("fun")}>

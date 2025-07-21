@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaTimes } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import project from "../Projects/projects.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion, AnimatePresence } from "framer-motion";
+import projects from "../Projects/projects.json";
 
 const Projects = () => {
-  const [showDetails, setShowDetails] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 2000, once: true });
+  }, []);
 
   const settings = {
     dots: true,
@@ -18,49 +23,32 @@ const Projects = () => {
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      once: false,
-      mirror: true,
-    });
-  }, []);
-
   return (
-    <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] py-12 px-4">
+    <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] py-16 px-4">
       <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:max-w-7xl mx-auto bg-black/30 p-6 rounded-lg">
-        {project.map((project, idx) => (
-          <div key={idx} className="bg-white/10 rounded-xl shadow-md p-4  flex flex-col justify-between hover:shadow-xl transition transform hover:scale-[1.02]" data-aos="zoom-in-up">
-            {/* Image Section */}
+      {/* Flex layout for proper centering of last row */}
+      <div className="flex flex-wrap justify-center lg:justify-start gap-6 max-w-7xl mx-auto ">
+        {projects.map((project, idx) => (
+          <motion.div key={idx} className="w-full md:w-[48%] lg:w-[32%] max-w-[400px] bg-black/30 rounded-xl shadow-md p-4 flex flex-col justify-between hover:shadow-xl transition hover:scale-[1.02]" data-aos="zoom-in-up">
+            {/* Slider */}
             <div className="w-full mb-4">
-              {showDetails === idx ? (
-                <div className="grid grid-cols-1 gap-2">
-                  {project.images.map((img, i) => (
-                    <img key={i} src={img} alt={`Project image ${i + 1}`} className="w-full h-64 object-cover rounded-lg" />
-                  ))}
-                </div>
-              ) : (
-                <Slider {...settings}>
-                  {project.images.map((img, i) => (
-                    <img key={i} src={img} alt={`Project screenshot ${i + 1}`} className="w-full h-64 object-cover rounded-lg" />
-                  ))}
-                </Slider>
-              )}
+              <Slider {...settings}>
+                {project.images.map((img, i) => (
+                  <img key={i} src={img} alt={`Screenshot ${i + 1}`} className="w-full h-64 object-cover rounded-lg" />
+                ))}
+              </Slider>
             </div>
 
-            {/* Title & Description */}
-            <div className="mb-3">
-              <h3 className="text-lg font-bold text-primary mb-1">{project.title}</h3>
-              <div className="text-sm text-base-100 max-h-[3.2rem] overflow-auto pr-2 scrollbar-thin whitespace-normal leading-snug">{project.shortDesc}</div>
-            </div>
+            {/* Title & Short Description */}
+            <h3 className="text-lg font-bold text-primary mb-1">{project.title}</h3>
+            <p className="text-sm text-base-100 mb-3 line-clamp-3">{project.shortDesc}</p>
 
             {/* Tech Badges */}
-            <div className="flex gap-2 mb-3 overflow-x-auto overflow-y-hidden flex-nowrap whitespace-nowrap scrollbar-thin py-1 pr-2">
+            <div className="flex flex-wrap gap-2 mb-3 overflow-x-auto scrollbar-thin">
               {project.technologies.map((tech, i) => (
                 <span key={i} className="badge badge-outline badge-primary text-xs text-orange-500">
                   {tech}
@@ -69,49 +57,65 @@ const Projects = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-3 mb-4">
-              <a href={project.live} className="btn btn-xs btn-primary flex items-center" target="_blank" rel="noreferrer">
+            <div className="flex flex-wrap gap-3 mt-auto">
+              <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary flex items-center text-black">
                 Live <FaExternalLinkAlt className="ml-1" />
               </a>
-              <a href={project.clientRepo} className="btn btn-xs btn-outline flex items-center text-base-100" target="_blank" rel="noreferrer">
+              <a href={project.clientRepo} target="_blank" rel="noreferrer" className="btn btn-xs btn-outline text-base-100 flex items-center">
                 Client <FaGithub className="ml-1" />
               </a>
-              <button onClick={() => setShowDetails(showDetails === idx ? null : idx)} className="btn btn-xs btn-primary">
-                {showDetails === idx ? "Hide Details" : "View Details"}
+              <button onClick={() => setSelectedProject(project)} className="btn btn-xs btn-info ">
+                View Details
               </button>
             </div>
-
-            {/* Expandable Section */}
-            {showDetails === idx && (
-              <div className="mt-3 border-t border-base-300 pt-3 text-sm text-base-100 overflow-y-auto max-h-[240px] pr-2 space-y-3">
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Full Description:</h4>
-                  <p>{project.fullDesc}</p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Main Features:</h4>
-                  <ul className="list-disc ml-5">
-                    {project.features.map((f, i) => (
-                      <li key={i}>{f}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Challenges:</h4>
-                  <p>{project.challenges}</p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Future Plans:</h4>
-                  <p>{project.futurePlans}</p>
-                </div>
-              </div>
-            )}
-          </div>
+          </motion.div>
         ))}
       </div>
+
+      {/* Detail Modal */}
+      <AnimatePresence>
+        {selectedProject && (
+          <motion.div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <motion.div className="glass text-gray-200 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 relative" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
+              <button onClick={() => setSelectedProject(null)} className="absolute top-4 right-4 text-red-500 hover:text-red-700 text-xl">
+                <FaTimes />
+              </button>
+
+              <h3 className="text-2xl font-bold text-primary mb-3">{selectedProject.title}</h3>
+              <p className="mb-4 ">{selectedProject.fullDesc}</p>
+
+              {/* Gallery */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                {selectedProject.images.map((img, i) => (
+                  <img key={i} src={img} alt={`Detailed View ${i + 1}`} className="rounded-lg shadow" />
+                ))}
+              </div>
+
+              {/* Features */}
+              <div className="mb-4">
+                <h4 className="font-semibold text-primary mb-1">Main Features:</h4>
+                <ul className="list-disc list-inside pl-2 text-sm space-y-1">
+                  {selectedProject.features.map((f, i) => (
+                    <li key={i}>{f}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Challenges */}
+              <div className="mb-4">
+                <h4 className="font-semibold text-primary mb-1">Challenges:</h4>
+                <p className="text-sm">{selectedProject.challenges}</p>
+              </div>
+
+              {/* Future Plans */}
+              <div>
+                <h4 className="font-semibold text-primary mb-1">Future Plans:</h4>
+                <p className="text-sm">{selectedProject.futurePlans}</p>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

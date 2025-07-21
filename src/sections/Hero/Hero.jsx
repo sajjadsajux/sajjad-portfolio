@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 lg:py-2 md:min-h-[82vh] lg:min-h-[80vh] overflow-hidden ">
-      <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-10 pt-20">
+      <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-10 pt-10 lg:pt-36">
         {/* Left - Profile Image with Animated Ring & Tilt */}
         {/* Left - Profile Image with Animated Ring & Tilt */}
         <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} className="relative w-full md:w-2/5 flex flex-col items-center gap-4">
