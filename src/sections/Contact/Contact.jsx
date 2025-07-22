@@ -23,7 +23,7 @@ const Contact = () => {
         <p className="text-base md:text-lg text-base-100 mt-4 max-w-2xl mx-auto">Have a question or want to work together? Reach out via the form or my contact details below.</p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-8 justify-between items-stretch max-w-7xl mx-auto px-4 py-5 bg-black/30 rounded-2xl">
+      <div className="flex flex-col md:flex-row gap-8 justify-between items-stretch max-w-7xl mx-auto px-4 py-5  rounded-2xl">
         {/* Contact Info */}
         <div data-aos="fade-up" className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-xl w-full max-w-2xl text-base-100 space-y-8">
           {/* Contact Info */}

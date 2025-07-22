@@ -33,7 +33,7 @@ const Projects = () => {
       {/* Flex layout for proper centering of last row */}
       <div className="flex flex-wrap justify-center lg:justify-start gap-6 max-w-7xl mx-auto ">
         {projects.map((project, idx) => (
-          <motion.div key={idx} className="w-full md:w-[48%] lg:w-[32%] max-w-[400px] bg-black/30 rounded-xl shadow-md p-4 flex flex-col justify-between hover:shadow-xl transition hover:scale-[1.02]" data-aos="zoom-in-up">
+          <motion.div key={idx} className="w-full md:w-[48%] lg:w-[32%] max-w-[400px] bg-white/10 rounded-xl shadow-md p-4 flex flex-col justify-between hover:shadow-xl transition hover:scale-[1.02]" data-aos="zoom-in-up">
             {/* Slider */}
             <div className="w-full mb-4">
               <Slider {...settings}>

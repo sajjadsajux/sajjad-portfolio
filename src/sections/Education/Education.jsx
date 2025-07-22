@@ -17,7 +17,7 @@ const Education = () => {
     <section id="education" className="bg-[linear-gradient(to_right,_#000428,_#004e92)] py-12 px-4">
       <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Education</h2>
 
-      <div className="max-w-7xl mx-auto relative bg-black/30 p-5 rounded-lg">
+      <div className="max-w-7xl mx-auto relative  p-5 rounded-lg">
         <div className="border-l-4 border-primary pl-6">
           {education.map((edu, index) => (
             <div key={index} data-aos="fade-up" className=" relative group my-2">

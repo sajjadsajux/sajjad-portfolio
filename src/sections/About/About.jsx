@@ -83,7 +83,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-0 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">About Me</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 bg-black/30 backdrop-blur-md p-6 rounded-lg">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10  backdrop-blur-md p-6 rounded-lg">
           {/* LEFT SIDE - Accordion Timeline */}
           <div data-aos="fade-up" className="md:col-span-2 space-y-6 relative">
             <div className="absolute left-4 top-0 bottom-0 w-1 bg-primary/30 rounded-full hidden md:block"></div>

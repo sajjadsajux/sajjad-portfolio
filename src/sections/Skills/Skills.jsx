@@ -18,7 +18,7 @@ const Skills = () => {
     <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] min-h-screen py-16 text-white">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">Skills & Technologies</h2>
 
-      <div className="max-w-7xl mx-auto px-4 space-y-4 bg-black/30 backdrop-blur-md p-6 rounded-lg">
+      <div className="max-w-7xl mx-auto px-4 space-y-4  backdrop-blur-md p-6 rounded-lg">
         {/* Frontend Section */}
         <section data-aos="fade-up">
           <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Frontend</h3>
