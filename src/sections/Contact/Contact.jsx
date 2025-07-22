@@ -32,13 +32,13 @@ const Contact = () => {
             <ul className="space-y-4 text-lg">
               <li className="flex items-center gap-4">
                 <FaPhone size={26} className="text-primary" />
-                <a href="tel:+8801629202095" className="hover:text-primary-focus text-sm md:text-lg">
-                  +880 1629 202095
+                <a href="tel:+8801820646469" className="hover:text-primary-focus text-sm md:text-lg">
+                  +880 1820 646469
                 </a>
               </li>
               <li className="flex items-center gap-4">
                 <FaWhatsapp size={26} className="text-primary" />
-                <a href="https://wa.me/8801629202095" target="_blank" rel="noreferrer" className="hover:text-primary-focus text-sm md:text-lg">
+                <a href="https://wa.me/8801820646469" target="_blank" rel="noreferrer" className="hover:text-primary-focus text-sm md:text-lg">
                   Chat on WhatsApp
                 </a>
               </li>
