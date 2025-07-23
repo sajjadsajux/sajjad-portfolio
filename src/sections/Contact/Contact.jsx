@@ -75,7 +75,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div data-aos="fade-left" className="w-full md:w-1/2">
+        <div data-aos="fade-up" className="w-full md:w-1/2">
           <div className="bg-white/10 p-6 rounded-lg shadow-md">
             <ContactForm />
           </div>

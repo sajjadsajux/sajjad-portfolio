@@ -75,25 +75,31 @@ const Projects = () => {
       {/* Detail Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <motion.div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <motion.div className="glass text-gray-200 rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-6 relative" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
-              <button onClick={() => setSelectedProject(null)} className="absolute top-4 right-4 text-red-500 hover:text-red-700 text-xl">
+          <motion.div className="fixed inset-0 z-50 bg-black/70 flex lg:justify-center  items-start lg:items-center px-2 sm:px-4 py-4 overflow-y-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <motion.div
+              className="glass text-gray-200 rounded-lg shadow-xl w-full max-w-[95vw] sm:max-w-3xl max-h-[calc(100vh-2rem)] overflow-y-auto p-4 sm:p-6 relative"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <button onClick={() => setSelectedProject(null)} className="absolute top-3 right-3 text-red-500 hover:text-red-700 text-lg sm:text-xl">
                 <FaTimes />
               </button>
 
-              <h3 className="text-2xl font-bold text-primary mb-3">{selectedProject.title}</h3>
-              <p className="mb-4 ">{selectedProject.fullDesc}</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3">{selectedProject.title}</h3>
+              <p className="mb-4 text-sm sm:text-base">{selectedProject.fullDesc}</p>
 
               {/* Gallery */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
                 {selectedProject.images.map((img, i) => (
-                  <img key={i} src={img} alt={`Detailed View ${i + 1}`} className="rounded-lg shadow" />
+                  <img key={i} src={img} alt={`Detailed View ${i + 1}`} className="rounded-lg shadow w-full h-auto object-cover" />
                 ))}
               </div>
 
               {/* Features */}
               <div className="mb-4">
-                <h4 className="font-semibold text-primary mb-1">Main Features:</h4>
+                <h4 className="font-semibold text-primary mb-1 text-base sm:text-lg">Main Features:</h4>
                 <ul className="list-disc list-inside pl-2 text-sm space-y-1">
                   {selectedProject.features.map((f, i) => (
                     <li key={i}>{f}</li>
@@ -103,13 +109,13 @@ const Projects = () => {
 
               {/* Challenges */}
               <div className="mb-4">
-                <h4 className="font-semibold text-primary mb-1">Challenges:</h4>
+                <h4 className="font-semibold text-primary mb-1 text-base sm:text-lg">Challenges:</h4>
                 <p className="text-sm">{selectedProject.challenges}</p>
               </div>
 
               {/* Future Plans */}
               <div>
-                <h4 className="font-semibold text-primary mb-1">Future Plans:</h4>
+                <h4 className="font-semibold text-primary mb-1 text-base sm:text-lg">Future Plans:</h4>
                 <p className="text-sm">{selectedProject.futurePlans}</p>
               </div>
             </motion.div>
