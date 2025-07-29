@@ -7,7 +7,11 @@
     "live": "https://future--study.web.app/",
     "clientRepo": "https://future--study.web.app/",
     "serverRepo": "https://future--study.web.app/",
-    "images": ["  https://iili.io/F5NmvZg.png", "https://iili.io/F5Nmeu1.png", "https://iili.io/F5NmkwF.png"],
+    "images": [
+      "  https://res.cloudinary.com/dfyyhn4i4/image/upload/v1753772129/FutureStudy_-_Home__11zon_lddpfi.png",
+      "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1753772128/futurestudy_All_Scholarships__11zon_g04pfw.png",
+      "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1753772128/FutureStudy_-User_Dashboard__11zon_rki1pa.png"
+    ],
     "features": [
       "Three distinct role-based dashboards: User, Moderator, Admin",
       "Full scholarship application workflow with dynamic form and Stripe integration",
