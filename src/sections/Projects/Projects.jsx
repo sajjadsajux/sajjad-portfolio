@@ -31,7 +31,7 @@ const Projects = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">Projects</h2>
 
       {/* Flex layout for proper centering of last row */}
-      <div className="flex flex-wrap justify-center lg:justify-start gap-6 max-w-7xl mx-auto ">
+      <div className="flex flex-wrap justify-center  gap-6 max-w-7xl mx-auto ">
         {projects.map((project, idx) => (
           <motion.div key={idx} className="w-full md:w-[48%] lg:w-[32%] max-w-[400px] bg-white/10 rounded-xl shadow-md p-4 flex flex-col justify-between hover:shadow-xl transition hover:scale-[1.02]" data-aos="zoom-in-up">
             {/* Slider */}
@@ -50,7 +50,7 @@ const Projects = () => {
             {/* Tech Badges */}
             <div className="flex flex-wrap gap-2 mb-3 overflow-x-auto scrollbar-thin">
               {project.technologies.map((tech, i) => (
-                <span key={i} className="badge badge-outline badge-primary text-xs text-orange-500">
+                <span key={i} className="badge badge-outline  text-white text-xs ">
                   {tech}
                 </span>
               ))}
@@ -61,10 +61,10 @@ const Projects = () => {
               <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary flex items-center text-black">
                 Live <FaExternalLinkAlt className="ml-1" />
               </a>
-              <a href={project.clientRepo} target="_blank" rel="noreferrer" className="btn btn-xs btn-outline text-base-100 flex items-center">
+              <a href={project.clientRepo} target="_blank" rel="noreferrer" className="btn btn-xs btn-outline text-base-100 flex items-center hover:bg-primary hover:text-black">
                 Client <FaGithub className="ml-1" />
               </a>
-              <button onClick={() => setSelectedProject(project)} className="btn btn-xs btn-info ">
+              <button onClick={() => setSelectedProject(project)} className="btn btn-xs btn-primary text-black ">
                 View Details
               </button>
             </div>
