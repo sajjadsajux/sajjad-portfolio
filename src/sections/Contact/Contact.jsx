@@ -15,7 +15,7 @@ const Contact = () => {
     });
   }, []);
   return (
-    <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] py-12 px-4">
+    <section className="bg-[linear-gradient(to_right,_#000428,_#004e92)] py-12 lg:px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-primary">
           <TypeAnimation sequence={["Need a Developer?", 1500, "Discuss Opportunities", 1500, "Start a Collaboration", 1500, "Your Project, My Code", 1500, "Let's Talk", 1500]} wrapper="span" speed={50} repeat={Infinity} />
@@ -50,7 +50,7 @@ const Contact = () => {
               </li>
               <li className="flex items-center gap-4">
                 <FaMapMarkerAlt size={26} className="text-primary " />
-                <span className="text-sm md:text-lg">Sreemangal, Bangladesh</span>
+                <span className="text-sm md:text-lg">Dhaka, Bangladesh</span>
               </li>
             </ul>
           </div>
