@@ -55,7 +55,7 @@
     "title": "EventBangla",
     "shortDesc": "A platform to discover and explore local Bangladeshi events. A platform to discover and explore local Bangladeshi events.A platform to discover and explore local Bangladeshi .",
     "fullDesc": "Event Bangla lets users discover local events across categories like concerts, sports, workshops, and more. The app includes booking seats, protected profiles, animated UI, and a fully responsive layout designed for Bangladeshi audiences.",
-    "technologies": ["React", "React Router", "Firebase Auth", "Tailwind CSS"],
+    "technologies": ["React", "React Router", "Firebase Auth", "Tailwind CSS", "React Router", "Firebase Auth", "Tailwind CSS", "React Router", "Firebase Auth", "Tailwind CSS", "React Router", "Firebase Auth", "Tailwind CSS"],
     "live": "https://eventbangla.netlify.app/",
     "clientRepo": "https://github.com/sajjadsajux/eventbangla",
     "serverRepo": "",

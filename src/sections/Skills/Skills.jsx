@@ -38,7 +38,7 @@ const Skills = () => {
         </section>
 
         {/* Backend Section */}
-        <section data-aos="fade-left">
+        <section data-aos="fade-up">
           <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Backend</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {backendSkills.map(({ name, logo, type }, idx) => (
@@ -54,7 +54,7 @@ const Skills = () => {
         </section>
 
         {/* Tools Section */}
-        <section data-aos="zoom-in-up" className="mt-10">
+        <section data-aos="fade-up" className="mt-10">
           <h3 className="text-2xl font-semibold text-base-200 mb-6 text-center">Tools & Packages</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {tools.map(({ name, logo, type }, idx) => (

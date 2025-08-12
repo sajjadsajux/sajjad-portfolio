@@ -48,22 +48,22 @@ const Projects = () => {
             <p className="text-sm text-base-100 mb-3 line-clamp-3">{project.shortDesc}</p>
 
             {/* Tech Badges */}
-            <div className="flex flex-wrap gap-2 mb-3 overflow-x-auto scrollbar-thin">
+            {/* <div className="flex flex-wrap gap-2 mb-3 overflow-x-auto scrollbar-thin">
               {project.technologies.map((tech, i) => (
                 <span key={i} className="badge badge-outline  text-white text-xs ">
                   {tech}
                 </span>
               ))}
-            </div>
+            </div> */}
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-3 mt-auto">
-              <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary flex items-center text-black">
+            <div className="flex flex-wrap gap-3 mt-auto mx-auto">
+              {/* <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary flex items-center text-black">
                 Live <FaExternalLinkAlt className="ml-1" />
               </a>
               <a href={project.clientRepo} target="_blank" rel="noreferrer" className="btn btn-xs btn-outline text-base-100 flex items-center hover:bg-primary hover:text-black">
                 Client <FaGithub className="ml-1" />
-              </a>
+              </a> */}
               <button onClick={() => setSelectedProject(project)} className="btn btn-xs btn-primary text-black ">
                 View Details
               </button>
@@ -89,6 +89,24 @@ const Projects = () => {
 
               <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3">{selectedProject.title}</h3>
               <p className="mb-4 text-sm sm:text-base">{selectedProject.fullDesc}</p>
+
+              {/* Tech Badges */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {selectedProject.technologies.map((tech, i) => (
+                  <span key={i} className="badge badge-outline text-white text-xs">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              {/* Live & Client Buttons */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a href={selectedProject.live} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary flex items-center text-black">
+                  Live <FaExternalLinkAlt className="ml-1" />
+                </a>
+                <a href={selectedProject.clientRepo} target="_blank" rel="noreferrer" className="btn btn-xs btn-outline text-base-100 flex items-center hover:bg-primary hover:text-black">
+                  Client <FaGithub className="ml-1" />
+                </a>
+              </div>
 
               {/* Gallery */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
