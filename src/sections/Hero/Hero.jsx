@@ -14,7 +14,7 @@ const Hero = () => {
         <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} className="relative w-full md:w-2/5 flex flex-col items-center gap-4">
           <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} glareEnable={true} glareMaxOpacity={0.2} className="z-10">
             <motion.div whileHover={{ scale: 1.03 }} className="w-64 lg:w-96 h-64 lg:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-base-200 relative bg-base-100">
-              <img src="https://i.ibb.co/mCnMS4RM/Sajjad-PFP2-Enhanced.png" alt="Sajjad Saju" className="w-full h-full object-cover" />
+              <img src="https://res.cloudinary.com/dfyyhn4i4/image/upload/v1756271739/Sajjad_PFP2_oa9zsm.png" alt="Sajjad Saju" className="w-full h-full object-cover" />
               <div className="absolute bottom-2 right-2 bg-green-600 text-white text-xs px-3 py-1 rounded-full animate-pulse shadow-md">Available for Hire</div>
             </motion.div>
           </Tilt>
