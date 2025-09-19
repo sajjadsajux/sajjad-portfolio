@@ -32,7 +32,7 @@
     "live": "https://fluently-web.firebaseapp.com/",
     "clientRepo": "https://github.com/sajjadsajux/fluently",
     "serverRepo": "https://github.com/sajjadsajux/fluently-server",
-    "images": ["  https://iili.io/F5NmvZg.png", "https://iili.io/F5Nmeu1.png", "https://iili.io/F5NmkwF.png"],
+    "images": ["  https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758300600/f1-min_pjygo8.png", "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758300612/f2-min_ywgyoj.png", "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758300831/f3-min_iwcqqn.png"],
     "features": ["Browse and filter tutors", "Tutor booking system", "Manage personal tutorials", "JWT-protected routes", "Google Sign-In and Auth", "Review system", "Responsive design", "Theme toggle and animations"],
     "challenges": "Implementing JWT",
     "futurePlans": "Integrate live video calling, tutor availability calendar, and enhanced review analytics."
@@ -46,7 +46,7 @@
     "live": "https://planttick.web.app",
     "clientRepo": "https://github.com/sajjadsajux/planttick",
     "serverRepo": "",
-    "images": ["https://iili.io/F5OnC8X.md.png", "https://iili.io/F5OnBat.png", "https://iili.io/F5OnqFI.png"],
+    "images": ["https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758301089/p1-min_jibtgv.png", "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758301095/p2-min_xosdcz.png", "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758301102/p3-min_vhrtia.png"],
     "features": ["User authentication", "Add/update/delete plant entries", "Track watering & health", "Responsive UI", "Theme toggle", "Sort/filter by care schedules"],
     "challenges": "Implementing sorting feature from the backend.",
     "futurePlans": "Add reminders, calendar syncing, and plant image recognition for auto-tagging.."
@@ -59,7 +59,7 @@
     "live": "https://eventbangla.netlify.app/",
     "clientRepo": "https://github.com/sajjadsajux/eventbangla",
     "serverRepo": "",
-    "images": ["https://iili.io/F5Oo0gI.png", "https://iili.io/F5OoYsR.png", "https://iili.io/F5Ool0N.png"],
+    "images": ["https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758301760/e1-min_khpzs8.png", "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758301763/e2-min_umkrjz.png", "https://res.cloudinary.com/dfyyhn4i4/image/upload/v1758301791/e3-min_bcblgp.png"],
     "features": ["Event booking system", "Firebase Authentication", "Profile update and management", "Protected routes for booking", "AOS scroll animations", "Responsive design with Swiper slider", "Toast and loading feedback"],
     "challenges": "Updating user details from the user profile section.",
     "futurePlans": "Add RSVP feature and event reminders."
