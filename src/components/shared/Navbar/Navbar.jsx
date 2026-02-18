@@ -1,7 +1,5 @@
-import React from "react";
-import ThemeToggle from "../../Theme/ThemeToggle";
+import { FaEnvelope, FaGraduationCap, FaHome, FaProjectDiagram, FaTools, FaUser } from "react-icons/fa";
 import SajjadLogo from "../SajjadLogo/SajjadLogo";
-import { FaHome, FaUser, FaTools, FaGraduationCap, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   const navLinks = (
@@ -45,7 +43,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar   text-white container mx-auto ">
+    <div className="navbar   text-white max-w-7xl mx-auto ">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
