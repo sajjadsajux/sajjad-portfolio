@@ -20,7 +20,7 @@ const Home = () => {
       <section id="skills" className=" scroll-mt-16">
         <Skills />
       </section>
-      <section id="experience" className=" ">
+      <section id="experience" className=" scroll-mt-16">
         <Experience />
       </section>
       <section id="education" className=" scroll-mt-16">

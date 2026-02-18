@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGraduationCap, FaHome, FaProjectDiagram, FaTools, FaUser } from "react-icons/fa";
+import { FaBriefcase, FaEnvelope, FaGraduationCap, FaHome, FaProjectDiagram, FaTools, FaUser } from "react-icons/fa";
 import SajjadLogo from "../SajjadLogo/SajjadLogo";
 
 const Navbar = () => {
@@ -19,11 +19,11 @@ const Navbar = () => {
           <FaTools /> Skills
         </a>
       </li>
-      {/* <li>
-      <a href="#experience" className="flex items-center gap-2 hover:text-primary">
-        <FaBriefcase /> Experience
-      </a>
-    </li> */}
+      <li>
+        <a href="#experience" className="flex items-center gap-2 hover:text-primary">
+          <FaBriefcase /> Experience
+        </a>
+      </li>
       <li>
         <a href="#education" className="flex items-center gap-2 hover:text-primary">
           <FaGraduationCap /> Education
