@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sajjadsaju.web.app/sitemap.xml
