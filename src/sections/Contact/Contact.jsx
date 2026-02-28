@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
-import { FaGithub, FaLinkedin, FaWhatsapp, FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import ContactForm from "./ContactForm";
-import { TypeAnimation } from "react-type-animation";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import ContactForm from "./ContactForm";
 const Contact = () => {
   useEffect(() => {
     AOS.init({
@@ -61,15 +60,15 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-primary">Connect with Me</h3>
             <div className="flex gap-6 text-3xl">
-              <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="hover:text-secondary transition">
+              <a href="https://github.com/sajjadsajux" target="_blank" rel="noreferrer" className="hover:text-secondary transition">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="hover:text-secondary transition">
+              <a href="https://www.linkedin.com/in/sajjadsaju/" target="_blank" rel="noreferrer" className="hover:text-secondary transition">
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noreferrer" className="hover:text-secondary transition">
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noreferrer" className="hover:text-secondary transition">
                 <FaSquareXTwitter />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
